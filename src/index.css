@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+  }
+
+  body {
+    background-color: #F5F2EB;
+    color: #121212;
+    overflow-x: hidden;
+    width: 100%;
+  }
+}
+
+/* Custom scrollbars for clean editorial look */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #ECE8DE;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #A3A3A3;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #171717;
+}
+
+/* Perforated stamp style */
+.stamp-border {
+  border: 2px dashed #171717;
+  position: relative;
+}
+
+/* Pin texture badge */
+.pin-shadow {
+  box-shadow: 0 8px 24px -4px rgba(18, 18, 18, 0.18), 0 2px 6px -1px rgba(18, 18, 18, 0.08);
+}
