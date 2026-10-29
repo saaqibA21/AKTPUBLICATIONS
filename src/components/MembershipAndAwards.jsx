@@ -20,10 +20,10 @@ export default function MembershipAndAwards({ onOpenDonation }) {
             </h2>
           </div>
 
-          <div className="flex bg-white p-1 rounded-full border border-neutral-300 shadow-sm">
+          <div className="w-full sm:w-auto overflow-x-auto pb-1 sm:pb-0 scrollbar-none flex bg-white p-1 rounded-full border border-neutral-300 shadow-sm max-w-full">
             <button
               onClick={() => setActiveTab('membership')}
-              className={`px-5 py-2.5 rounded-full text-xs font-bold transition-all ${
+              className={`px-4 sm:px-5 py-2 sm:py-2.5 rounded-full text-xs font-bold transition-all whitespace-nowrap flex-1 sm:flex-initial text-center ${
                 activeTab === 'membership'
                   ? 'bg-black text-white shadow'
                   : 'text-neutral-700 hover:text-black'
@@ -33,7 +33,7 @@ export default function MembershipAndAwards({ onOpenDonation }) {
             </button>
             <button
               onClick={() => setActiveTab('awards')}
-              className={`px-5 py-2.5 rounded-full text-xs font-bold transition-all ${
+              className={`px-4 sm:px-5 py-2 sm:py-2.5 rounded-full text-xs font-bold transition-all whitespace-nowrap flex-1 sm:flex-initial text-center ${
                 activeTab === 'awards'
                   ? 'bg-black text-white shadow'
                   : 'text-neutral-700 hover:text-black'
@@ -43,7 +43,7 @@ export default function MembershipAndAwards({ onOpenDonation }) {
             </button>
             <button
               onClick={() => setActiveTab('donation')}
-              className={`px-5 py-2.5 rounded-full text-xs font-bold transition-all ${
+              className={`px-4 sm:px-5 py-2 sm:py-2.5 rounded-full text-xs font-bold transition-all whitespace-nowrap flex-1 sm:flex-initial text-center ${
                 activeTab === 'donation'
                   ? 'bg-black text-white shadow'
                   : 'text-neutral-700 hover:text-black'

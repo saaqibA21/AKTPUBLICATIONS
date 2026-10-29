@@ -66,36 +66,36 @@ export default function DossierSpotlight({ onSelectArticle, onOpenSubmit }) {
 
           {/* Center Pinned Dossier Poster (6 cols) */}
           <div className="lg:col-span-6">
-            <div className="bg-[#FAF8F5] border-2 border-dashed border-neutral-400 rounded-3xl p-6 sm:p-9 shadow-2xl relative transition-transform hover:scale-[1.01]">
+            <div className="bg-[#FAF8F5] border-2 border-dashed border-neutral-400 rounded-2xl sm:rounded-3xl p-4 sm:p-9 shadow-2xl relative transition-transform hover:scale-[1.01]">
               
               {/* Pushpin / Tape graphic at top */}
-              <div className="absolute -top-3.5 left-1/2 transform -translate-x-1/2 bg-black text-white text-[10px] font-mono font-black uppercase tracking-widest px-5 py-1.5 rounded-full shadow-lg border border-white">
+              <div className="absolute -top-3 sm:-top-3.5 left-1/2 transform -translate-x-1/2 bg-black text-white text-[8px] sm:text-[10px] font-mono font-black uppercase tracking-widest px-3 sm:px-5 py-1 sm:py-1.5 rounded-full shadow-lg border border-white whitespace-nowrap">
                 ★ TOP 1% SCIENTIFIC IMPACT DOSSIER ★
               </div>
 
               {/* Dossier Header */}
-              <div className="text-center pt-3 pb-4 border-b border-neutral-300">
-                <span className="text-[11px] font-bold uppercase tracking-widest text-neutral-600">
+              <div className="text-center pt-3 pb-3 sm:pb-4 border-b border-neutral-300">
+                <span className="text-[10px] sm:text-[11px] font-bold uppercase tracking-widest text-neutral-600 block">
                   AKT EDITORIAL SELECTION • BIOTECHNOLOGY & ONCOLOGY
                 </span>
-                <h3 className="font-display uppercase text-2xl sm:text-3xl lg:text-4xl text-black font-black tracking-tight mt-1">
+                <h3 className="font-display uppercase text-xl sm:text-3xl lg:text-4xl text-black font-black tracking-tight mt-1">
                   {featuredArticle.title}
                 </h3>
               </div>
 
               {/* Authors & Affiliation strip */}
-              <div className="py-3 text-center border-b border-neutral-200">
+              <div className="py-2.5 sm:py-3 text-center border-b border-neutral-200">
                 <div className="text-xs font-bold text-neutral-900">
                   {featuredArticle.authors}
                 </div>
-                <div className="text-[11px] text-neutral-500 font-mono mt-0.5">
+                <div className="text-[10px] sm:text-[11px] text-neutral-500 font-mono mt-0.5">
                   DOI: {featuredArticle.doi} • Registered CrossRef
                 </div>
               </div>
 
               {/* High-Contrast Photo & Abstract snippet */}
-              <div className="grid grid-cols-1 sm:grid-cols-12 gap-5 my-5 items-center">
-                <div className="sm:col-span-4 rounded-2xl overflow-hidden aspect-square border border-neutral-300 bg-black">
+              <div className="grid grid-cols-1 sm:grid-cols-12 gap-3 sm:gap-5 my-4 sm:my-5 items-center">
+                <div className="sm:col-span-4 rounded-xl sm:rounded-2xl overflow-hidden aspect-video sm:aspect-square border border-neutral-300 bg-black max-w-xs mx-auto sm:max-w-none w-full">
                   <img
                     src="https://images.unsplash.com/photo-1532187863486-abf9dbad1b69?auto=format&fit=crop&w=600&q=80"
                     alt="CRISPR gene editing research"
@@ -103,11 +103,11 @@ export default function DossierSpotlight({ onSelectArticle, onOpenSubmit }) {
                   />
                 </div>
                 <div className="sm:col-span-8">
-                  <div className="text-xs font-bold text-neutral-900 mb-1.5 flex items-center gap-1.5">
-                    <span className="bg-black text-white px-2 py-0.5 rounded text-[10px] uppercase font-bold">
+                  <div className="text-xs font-bold text-neutral-900 mb-1 flex items-center gap-1.5">
+                    <span className="bg-black text-white px-2 py-0.5 rounded text-[9px] sm:text-[10px] uppercase font-bold">
                       Abstract
                     </span>
-                    <span className="text-neutral-600 text-[11px]">Peer-Reviewed Full Text</span>
+                    <span className="text-neutral-600 text-[10px] sm:text-[11px]">Peer-Reviewed Full Text</span>
                   </div>
                   <p className="text-xs sm:text-sm text-neutral-800 leading-relaxed italic">
                     "{featuredArticle.abstract}"
@@ -116,26 +116,26 @@ export default function DossierSpotlight({ onSelectArticle, onOpenSubmit }) {
               </div>
 
               {/* Live Metric Stats Bar */}
-              <div className="bg-neutral-100 rounded-2xl p-3.5 grid grid-cols-3 gap-2 text-center border border-neutral-200 text-xs">
+              <div className="bg-neutral-100 rounded-xl sm:rounded-2xl p-2.5 sm:p-3.5 grid grid-cols-3 gap-1.5 sm:gap-2 text-center border border-neutral-200 text-xs">
                 <div>
-                  <div className="font-mono font-black text-black text-base">{featuredArticle.views}</div>
-                  <div className="text-[10px] text-neutral-500 uppercase font-semibold">Article Views</div>
+                  <div className="font-mono font-black text-black text-sm sm:text-base">{featuredArticle.views}</div>
+                  <div className="text-[9px] sm:text-[10px] text-neutral-500 uppercase font-semibold">Views</div>
                 </div>
                 <div>
-                  <div className="font-mono font-black text-black text-base">{featuredArticle.downloads}</div>
-                  <div className="text-[10px] text-neutral-500 uppercase font-semibold">PDF Downloads</div>
+                  <div className="font-mono font-black text-black text-sm sm:text-base">{featuredArticle.downloads}</div>
+                  <div className="text-[9px] sm:text-[10px] text-neutral-500 uppercase font-semibold">Downloads</div>
                 </div>
                 <div>
-                  <div className="font-mono font-black text-black text-base">{featuredArticle.citations}</div>
-                  <div className="text-[10px] text-neutral-500 uppercase font-semibold">Citations (Scopus)</div>
+                  <div className="font-mono font-black text-black text-sm sm:text-base">{featuredArticle.citations}</div>
+                  <div className="text-[9px] sm:text-[10px] text-neutral-500 uppercase font-semibold">Citations</div>
                 </div>
               </div>
 
-              {/* Action Buttons */}
-              <div className="mt-6 flex flex-wrap items-center justify-between gap-3 pt-3 border-t border-neutral-200">
+              {/* Action Buttons - Mobile friendly full width */}
+              <div className="mt-4 sm:mt-6 flex flex-col sm:flex-row items-stretch sm:items-center justify-between gap-2.5 pt-3 border-t border-neutral-200">
                 <button
                   onClick={() => onSelectArticle(featuredArticle)}
-                  className="bg-black hover:bg-neutral-800 text-white px-6 py-2.5 rounded-full text-xs font-bold transition-all shadow-md flex items-center gap-2"
+                  className="bg-black hover:bg-neutral-800 text-white px-5 sm:px-6 py-2.5 rounded-full text-xs font-bold transition-all shadow-md flex items-center justify-center gap-2 min-h-[42px]"
                 >
                   <FileText className="w-3.5 h-3.5 text-white" />
                   <span>Read Full Article & Figures</span>
@@ -146,7 +146,7 @@ export default function DossierSpotlight({ onSelectArticle, onOpenSubmit }) {
                     e.preventDefault();
                     alert(`Initiating verified PDF download for DOI: ${featuredArticle.doi}`);
                   }}
-                  className="text-black hover:text-neutral-700 text-xs font-bold flex items-center gap-1.5 border border-neutral-400 px-4 py-2 rounded-full hover:bg-neutral-100 transition-colors"
+                  className="text-black hover:text-neutral-700 text-xs font-bold flex items-center justify-center gap-1.5 border border-neutral-400 px-4 py-2.5 rounded-full hover:bg-neutral-100 transition-colors min-h-[42px]"
                 >
                   <Download className="w-3.5 h-3.5 text-black" />
                   <span>Download PDF</span>

@@ -18,16 +18,16 @@ export default function ArchiveGrid({ onSelectArticle, onOpenSubmit }) {
     : currentArticles.filter(a => a.category === selectedCategory);
 
   return (
-    <section id="archive" className="bg-[#F5F2EB] py-16 lg:py-24 px-4 sm:px-8 lg:px-12 w-full border-b border-neutral-300">
+    <section id="archive" className="bg-[#F5F2EB] py-12 sm:py-16 lg:py-24 px-4 sm:px-8 lg:px-12 w-full border-b border-neutral-300">
       <div className="max-w-[1600px] w-full mx-auto">
         
         {/* Section Header */}
-        <div className="flex flex-col md:flex-row md:items-end justify-between mb-10 gap-4">
+        <div className="flex flex-col md:flex-row md:items-end justify-between mb-8 sm:mb-10 gap-3 sm:gap-4">
           <div>
-            <div className="text-xs font-mono font-bold tracking-widest text-black uppercase mb-1">
+            <div className="text-[11px] sm:text-xs font-mono font-bold tracking-widest text-black uppercase mb-1">
               VOLUME 12 • ISSUE 4 (CURRENT ISSUE)
             </div>
-            <h2 className="font-display uppercase text-3xl sm:text-4xl lg:text-5xl xl:text-6xl text-black font-black tracking-tight leading-[0.92]">
+            <h2 className="font-display uppercase text-3xl sm:text-5xl lg:text-6xl text-black font-black tracking-tight leading-[0.95] sm:leading-[0.92]">
               Latest Publications in <span className="text-[#C2410C]">AKT Archives</span>
             </h2>
           </div>

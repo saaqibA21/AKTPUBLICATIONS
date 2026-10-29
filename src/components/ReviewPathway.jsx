@@ -4,15 +4,15 @@ import { reviewStages } from '../data/journalData';
 
 export default function ReviewPathway({ onOpenSubmit, onOpenGuidelines }) {
   return (
-    <section className="bg-[#FAF8F5] py-16 lg:py-24 px-4 sm:px-8 lg:px-12 w-full border-b border-neutral-300">
+    <section className="bg-[#FAF8F5] py-12 sm:py-16 lg:py-24 px-4 sm:px-8 lg:px-12 w-full border-b border-neutral-300">
       <div className="max-w-[1600px] w-full mx-auto">
         
         {/* Section Heading */}
-        <div className="mb-12">
-          <div className="text-xs font-mono font-bold tracking-widest text-black uppercase mb-2">
+        <div className="mb-8 sm:mb-12">
+          <div className="text-[11px] sm:text-xs font-mono font-bold tracking-widest text-black uppercase mb-1.5 sm:mb-2">
             RIGOROUS & TRANSPARENT WORKFLOW
           </div>
-          <h2 className="font-display uppercase text-3xl sm:text-4xl lg:text-5xl xl:text-6xl text-black font-black tracking-tight">
+          <h2 className="font-display uppercase text-3xl sm:text-5xl lg:text-6xl text-black font-black tracking-tight leading-[0.95] sm:leading-[0.92]">
             The Chronicle of <span className="text-[#C2410C]">Peer Review & Publication</span>
           </h2>
           <p className="text-neutral-700 text-xs sm:text-sm lg:text-base mt-2 max-w-3xl font-medium">
@@ -89,34 +89,34 @@ export default function ReviewPathway({ onOpenSubmit, onOpenGuidelines }) {
               </div>
 
               {/* Documentary Photo snippet */}
-              <div className="mt-6 rounded-2xl overflow-hidden border border-neutral-300 relative aspect-[16/7] bg-black">
+              <div className="mt-6 rounded-2xl overflow-hidden border border-neutral-300 relative aspect-video sm:aspect-[16/7] bg-black">
                 <img
                   src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&w=1400&q=80"
                   alt="AKT Academic Peer Review Session"
                   className="w-full h-full object-cover grayscale contrast-125 brightness-95"
                 />
-                <div className="absolute bottom-3 left-4 right-4 bg-black/85 backdrop-blur-sm text-white px-3.5 py-1.5 rounded-xl text-[11px] font-mono flex items-center justify-between">
-                  <span>Peer Review Council • Zurich & Oxford Working Session</span>
-                  <span className="text-white font-bold">100% Blind Scrutiny</span>
+                <div className="absolute bottom-2 sm:bottom-3 left-2 sm:left-4 right-2 sm:right-4 bg-black/85 backdrop-blur-sm text-white px-2.5 sm:px-3.5 py-1 sm:py-1.5 rounded-lg sm:rounded-xl text-[10px] sm:text-[11px] font-mono flex items-center justify-between">
+                  <span className="truncate mr-2">Peer Review Council • Working Session</span>
+                  <span className="text-white font-bold whitespace-nowrap">100% Blind</span>
                 </div>
               </div>
             </div>
 
-            {/* Action Buttons */}
-            <div className="mt-6 pt-4 border-t border-neutral-200 flex flex-wrap items-center justify-between gap-4">
+            {/* Action Buttons - Stacked on mobile */}
+            <div className="mt-6 pt-4 border-t border-neutral-200 flex flex-col sm:flex-row items-stretch sm:items-center justify-between gap-3 sm:gap-4">
               <div className="text-xs text-neutral-600 font-medium">
                 Want to join our referee panel? We welcome active PhDs and researchers.
               </div>
-              <div className="flex items-center gap-3">
+              <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-2.5 sm:gap-3">
                 <button
                   onClick={onOpenGuidelines}
-                  className="text-xs font-bold text-neutral-900 hover:text-black underline"
+                  className="text-xs font-bold text-neutral-900 hover:text-black underline text-center py-1"
                 >
                   Reviewer Ethics Manual
                 </button>
                 <button
                   onClick={onOpenSubmit}
-                  className="bg-black hover:bg-neutral-800 text-white px-6 py-2.5 rounded-full text-xs font-bold transition-all shadow flex items-center gap-1.5"
+                  className="bg-black hover:bg-neutral-800 text-white px-6 py-2.5 rounded-full text-xs font-bold transition-all shadow flex items-center justify-center gap-1.5 min-h-[40px]"
                 >
                   <span>Submit Your Paper</span>
                   <ArrowRight className="w-3.5 h-3.5" />
