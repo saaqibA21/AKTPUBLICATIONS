@@ -8,9 +8,9 @@ export default {
     extend: {
       colors: {
         akt: {
-          red: '#0A0A0A',       // Changed from red to deep black
-          redDark: '#000000',   // Pure pitch black
-          redLight: '#E5E7EB',  // Light subtle contrast
+          orange: '#C2410C',    // Burnt Orange accent
+          orangeDark: '#9A3412',
+          orangeLight: '#FFEDD5',
           canvas: '#F5F2EB',    // Editorial paper / parchment background
           canvasSubtle: '#ECE8DE',
           dark: '#0A0A0A',      // Deep black
@@ -20,7 +20,11 @@ export default {
         }
       },
       fontFamily: {
-        display: ['"Bebas Neue"', 'Oswald', 'sans-serif'],
+        display: ['"Playfair Display"', 'Georgia', 'serif'], // Swapped from Bebas Neue to Playfair Display
+        playfair: ['"Playfair Display"', 'Georgia', 'serif'],
+        cinzel: ['"Cinzel"', 'Georgia', 'serif'],
+        cormorant: ['"Cormorant Garamond"', 'Georgia', 'serif'],
+        bebas: ['"Bebas Neue"', 'Oswald', 'sans-serif'],
         heading: ['"Plus Jakarta Sans"', 'Inter', 'sans-serif'],
         body: ['"Plus Jakarta Sans"', 'Inter', 'sans-serif'],
         serif: ['"Source Serif 4"', 'Georgia', 'serif'],

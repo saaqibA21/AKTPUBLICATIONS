@@ -15,7 +15,7 @@ export default function MembershipAndAwards({ onOpenDonation }) {
             <div className="text-xs font-mono font-bold tracking-widest text-black uppercase mb-1">
               FELLOWSHIP & ACADEMIC RECOGNITION
             </div>
-            <h2 className="font-display uppercase text-3xl sm:text-4xl lg:text-5xl xl:text-6xl text-black font-black tracking-tight">
+            <h2 className="font-display text-3xl sm:text-4xl lg:text-5xl text-stone-900 font-bold tracking-tight leading-[1.08]">
               Membership, <span className="text-[#C2410C]">Awards & Philanthropy</span>
             </h2>
           </div>

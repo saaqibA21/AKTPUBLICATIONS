@@ -48,7 +48,7 @@ export default function EditorialQuotes() {
             <div className="text-stone-500 text-xs font-bold tracking-widest uppercase mb-1">
               Editorial Governance & Academic Philosophy
             </div>
-            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-black text-stone-900 font-display tracking-wide uppercase">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-stone-900 font-display tracking-tight">
               Voices of the <span className="text-[#C2410C]">Editorial Advisory Board</span>
             </h2>
           </div>

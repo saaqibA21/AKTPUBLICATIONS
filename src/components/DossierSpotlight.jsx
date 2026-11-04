@@ -16,7 +16,7 @@ export default function DossierSpotlight({ onSelectArticle, onOpenSubmit }) {
             <Flame className="w-4 h-4 text-black" />
             <span>ARCHIVAL SPOTLIGHT & CASE DOSSIER</span>
           </div>
-          <h2 className="font-display uppercase text-3xl sm:text-4xl lg:text-5xl xl:text-6xl text-black font-black tracking-tight leading-[0.92]">
+          <h2 className="font-display text-3xl sm:text-4xl lg:text-5xl text-stone-900 font-bold tracking-tight leading-[1.08]">
             Featured Research <span className="text-[#C2410C]">Dossier & Breakthroughs</span>
           </h2>
           <p className="text-neutral-700 text-xs sm:text-sm lg:text-base mt-3 font-medium">

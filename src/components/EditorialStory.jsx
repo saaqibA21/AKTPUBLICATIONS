@@ -17,7 +17,7 @@ export default function EditorialStory({ onOpenEditorial, onOpenGuidelines }) {
             </div>
 
             {/* Headline with Burnt Orange accent font */}
-            <h2 className="font-display uppercase text-3xl sm:text-5xl lg:text-6xl xl:text-7xl text-black font-black tracking-tight leading-[0.95] sm:leading-[0.92] mb-4 sm:mb-6">
+            <h2 className="font-display text-3xl sm:text-5xl lg:text-6xl text-stone-900 font-bold tracking-tight leading-[1.08] mb-4 sm:mb-6">
               The Standard of <span className="text-[#C2410C]">Academic Rigor.</span>
             </h2>
 

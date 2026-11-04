@@ -12,7 +12,7 @@ export default function ReviewPathway({ onOpenSubmit, onOpenGuidelines }) {
           <div className="text-[11px] sm:text-xs font-mono font-bold tracking-widest text-black uppercase mb-1.5 sm:mb-2">
             RIGOROUS & TRANSPARENT WORKFLOW
           </div>
-          <h2 className="font-display uppercase text-3xl sm:text-5xl lg:text-6xl text-black font-black tracking-tight leading-[0.95] sm:leading-[0.92]">
+          <h2 className="font-display text-3xl sm:text-4xl lg:text-5xl text-stone-900 font-bold tracking-tight leading-[1.08]">
             The Chronicle of <span className="text-[#C2410C]">Peer Review & Publication</span>
           </h2>
           <p className="text-neutral-700 text-xs sm:text-sm lg:text-base mt-2 max-w-3xl font-medium">

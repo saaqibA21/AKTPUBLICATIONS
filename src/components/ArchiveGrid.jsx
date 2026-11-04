@@ -27,7 +27,7 @@ export default function ArchiveGrid({ onSelectArticle, onOpenSubmit }) {
             <div className="text-[11px] sm:text-xs font-mono font-bold tracking-widest text-black uppercase mb-1">
               VOLUME 12 • ISSUE 4 (CURRENT ISSUE)
             </div>
-            <h2 className="font-display uppercase text-3xl sm:text-5xl lg:text-6xl text-black font-black tracking-tight leading-[0.95] sm:leading-[0.92]">
+            <h2 className="font-display text-3xl sm:text-4xl lg:text-5xl text-stone-900 font-bold tracking-tight leading-[1.08]">
               Latest Publications in <span className="text-[#C2410C]">AKT Archives</span>
             </h2>
           </div>
