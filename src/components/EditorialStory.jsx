@@ -3,7 +3,7 @@ import { ArrowRight, Award, ShieldCheck, CheckCircle } from 'lucide-react';
 
 export default function EditorialStory({ onOpenEditorial, onOpenGuidelines }) {
   return (
-    <section className="bg-[#F5F2EB] py-12 sm:py-16 lg:py-24 px-4 sm:px-8 lg:px-12 w-full border-b border-neutral-300">
+    <section className="bg-white py-12 sm:py-16 lg:py-24 px-4 sm:px-8 lg:px-12 w-full border-b border-stone-200">
       <div className="max-w-[1600px] w-full mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-16 items-center">
           
@@ -11,70 +11,70 @@ export default function EditorialStory({ onOpenEditorial, onOpenGuidelines }) {
           <div className="lg:col-span-7">
             
             {/* Category Subtitle */}
-            <div className="text-[11px] sm:text-xs font-mono font-bold tracking-widest text-black uppercase mb-2 sm:mb-3 flex items-center gap-1.5">
+            <div className="text-[11px] sm:text-xs font-mono font-bold tracking-widest text-[#C2410C] uppercase mb-2 sm:mb-3 flex items-center gap-1.5">
               <span>✦</span>
-              <span>INSTITUTIONAL CHARTER & GOVERNANCE</span>
+              <span>ABOUT AKT PUBLICATIONS</span>
             </div>
 
             {/* Headline with Burnt Orange accent font */}
             <h2 className="font-display text-3xl sm:text-5xl lg:text-6xl text-stone-900 font-bold tracking-tight leading-[1.08] mb-4 sm:mb-6">
-              The Standard of <span className="text-[#C2410C]">Academic Rigor.</span>
+              Clear, High-Quality <span className="text-[#C2410C]">Research for Everyone.</span>
             </h2>
 
-            {/* Editorial Body Text with Bold Emphasis */}
-            <div className="space-y-3 sm:space-y-4 text-neutral-800 text-sm sm:text-base lg:text-lg leading-relaxed">
-              <p className="text-black font-medium text-base sm:text-lg lg:text-xl">
-                From <strong>rigorous initial screening</strong> to exhaustive double-blind referee scrutiny — AKT Publications is defined by <strong>methodological transparency and unyielding integrity</strong>.
+            {/* Editorial Body Text */}
+            <div className="space-y-3 sm:space-y-4 text-stone-700 text-sm sm:text-base lg:text-lg leading-relaxed">
+              <p className="text-stone-900 font-medium text-base sm:text-lg lg:text-xl">
+                Every paper submitted to AKT Publications goes through a careful, independent review by subject experts. We believe scientific research should be clear, reliable, and accessible to everyone.
               </p>
               
               <p>
-                Established to challenge monopolistic paywalls and opaque editorial timelines, our journals champion peer-reviewed excellence across <strong>40+ scientific and humanities disciplines</strong>. Every manuscript is audited against strict similarity protocols, data availability mandates, and ethical standards set forth by COPE.
+                We keep publication fees fair and editorial timelines transparent. Our journal covers more than <strong>40 academic fields</strong> across medicine, engineering, biological sciences, and the humanities. Every submission is checked for originality and evaluated on its true merits.
               </p>
 
               <p>
-                Even after final acceptance, our dedicated technical editors partner directly with authors to optimize LaTeX formatting, high-resolution figures, and permanent XML metadata preservation across <strong>Portico, PubMed Central, and CrossRef</strong>.
+                After acceptance, our editorial team works with authors to format equations, polish figures, and register permanent digital links (DOIs) so your research can be easily discovered, cited, and read worldwide.
               </p>
             </div>
 
-            {/* Quick Badges - Responsive stack on mobile */}
+            {/* Quick Badges */}
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-2 sm:gap-3.5 my-6 sm:my-8">
-              <div className="bg-white p-3 sm:p-3.5 rounded-xl sm:rounded-2xl border border-neutral-300 shadow-sm flex items-center gap-2.5">
-                <CheckCircle className="w-4 h-4 text-black shrink-0" />
-                <span className="text-xs font-bold text-neutral-900">Double-Blind Review</span>
+              <div className="bg-stone-50 p-3 sm:p-3.5 rounded-xl sm:rounded-2xl border border-stone-200 shadow-sm flex items-center gap-2.5">
+                <CheckCircle className="w-4 h-4 text-[#C2410C] shrink-0" />
+                <span className="text-xs font-bold text-stone-900">Double-Blind Review</span>
               </div>
-              <div className="bg-white p-3 sm:p-3.5 rounded-xl sm:rounded-2xl border border-neutral-300 shadow-sm flex items-center gap-2.5">
-                <ShieldCheck className="w-4 h-4 text-black shrink-0" />
-                <span className="text-xs font-bold text-neutral-900">Zero Plagiarism Policy</span>
+              <div className="bg-stone-50 p-3 sm:p-3.5 rounded-xl sm:rounded-2xl border border-stone-200 shadow-sm flex items-center gap-2.5">
+                <ShieldCheck className="w-4 h-4 text-[#C2410C] shrink-0" />
+                <span className="text-xs font-bold text-stone-900">Zero Plagiarism Policy</span>
               </div>
-              <div className="bg-white p-3 sm:p-3.5 rounded-xl sm:rounded-2xl border border-neutral-300 shadow-sm flex items-center gap-2.5">
-                <Award className="w-4 h-4 text-black shrink-0" />
-                <span className="text-xs font-bold text-neutral-900">Scopus & JCR Indexed</span>
+              <div className="bg-stone-50 p-3 sm:p-3.5 rounded-xl sm:rounded-2xl border border-stone-200 shadow-sm flex items-center gap-2.5">
+                <Award className="w-4 h-4 text-[#C2410C] shrink-0" />
+                <span className="text-xs font-bold text-stone-900">Scopus & JCR Indexed</span>
               </div>
             </div>
 
-            {/* Action Buttons - Stacked on mobile */}
+            {/* Action Buttons */}
             <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-3 sm:gap-4">
               <button
                 onClick={() => onOpenEditorial('advisory')}
-                className="bg-black hover:bg-neutral-800 text-white px-7 py-3.5 rounded-full font-bold text-xs uppercase tracking-wider transition-all shadow-md flex items-center justify-center gap-2 min-h-[44px]"
+                className="bg-[#C2410C] hover:bg-[#9A3412] text-white px-7 py-3.5 rounded-full font-bold text-xs uppercase tracking-wider transition-all shadow-md flex items-center justify-center gap-2 min-h-[44px]"
               >
-                <span>Read Full Charter</span>
+                <span>Editorial Board Directory</span>
                 <ArrowRight className="w-3.5 h-3.5" />
               </button>
 
               <button
                 onClick={() => onOpenGuidelines('ethics')}
-                className="text-neutral-700 hover:text-black text-xs font-bold uppercase tracking-wider transition-colors underline underline-offset-4 text-center py-2"
+                className="text-stone-700 hover:text-stone-950 text-xs font-bold uppercase tracking-wider transition-colors underline underline-offset-4 text-center py-2"
               >
-                Publication Ethics & Malpractice Statement
+                Publication Ethics & Guidelines
               </button>
             </div>
 
           </div>
 
-          {/* Right Column (5 cols): Monochrome Documentary Photo */}
+          {/* Right Column (5 cols): Documentary Photo */}
           <div className="lg:col-span-5 mt-4 lg:mt-0">
-            <div className="relative rounded-2xl sm:rounded-3xl overflow-hidden shadow-2xl border-4 border-white bg-black group max-w-sm sm:max-w-md lg:max-w-none mx-auto">
+            <div className="relative rounded-2xl sm:rounded-3xl overflow-hidden shadow-xl border-4 border-stone-100 bg-stone-900 group max-w-sm sm:max-w-md lg:max-w-none mx-auto">
               <img
                 src="https://images.unsplash.com/photo-1524178232363-1fb2b075b655?auto=format&fit=crop&w=1000&q=80"
                 alt="AKT International Editorial Advisory Council"
@@ -84,14 +84,14 @@ export default function EditorialStory({ onOpenEditorial, onOpenGuidelines }) {
               
               {/* Bottom text overlay */}
               <div className="absolute bottom-4 sm:bottom-6 left-4 sm:left-6 right-4 sm:right-6">
-                <div className="bg-white text-black text-[9px] sm:text-[10px] font-bold tracking-widest uppercase px-3 py-1 rounded-full w-fit mb-2 shadow">
-                  GLOBAL EDITORIAL GOVERNANCE
+                <div className="bg-white text-stone-900 text-[9px] sm:text-[10px] font-bold tracking-widest uppercase px-3 py-1 rounded-full w-fit mb-2 shadow">
+                  GLOBAL EDITORIAL BOARD
                 </div>
                 <h3 className="font-display uppercase text-xl sm:text-2xl lg:text-3xl text-white font-black tracking-wide">
                   International Advisory Board
                 </h3>
                 <p className="text-[10px] sm:text-xs text-neutral-300 font-mono mt-1">
-                  Over 120 Senior Professors & Department Chairs Worldwide
+                  Over 120 Senior Professors & Researchers Worldwide
                 </p>
               </div>
             </div>

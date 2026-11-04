@@ -38,7 +38,7 @@ export default function Navbar({
 
   return (
     <div className="sticky top-2 z-40 px-2.5 sm:px-8 lg:px-12 my-2 w-full">
-      <nav className="max-w-[1600px] w-full mx-auto bg-white/95 backdrop-blur-md border border-neutral-300 rounded-full shadow-pill px-3.5 sm:px-8 py-2 sm:py-2.5 flex items-center justify-between transition-all">
+      <nav className="max-w-[1600px] w-full mx-auto bg-white/95 backdrop-blur-md border border-stone-200 rounded-full shadow-pill px-3.5 sm:px-8 py-2 sm:py-2.5 flex items-center justify-between transition-all">
         
         {/* Brand Logo - Responsive sizing */}
         <button 
@@ -49,11 +49,11 @@ export default function Navbar({
             <span className="font-display tracking-widest text-base sm:text-lg">AKT</span>
           </div>
           <div className="flex flex-col">
-            <span className="text-[11px] sm:text-xs font-black tracking-wider uppercase text-black group-hover:text-[#C2410C] transition-colors leading-tight">
+            <span className="text-[11px] sm:text-xs font-black tracking-wider uppercase text-stone-900 group-hover:text-[#C2410C] transition-colors leading-tight">
               PUBLICATIONS
             </span>
-            <span className="text-[8px] sm:text-[9px] font-semibold text-neutral-500 uppercase tracking-widest hidden md:inline">
-              Open Academic Press
+            <span className="text-[8px] sm:text-[9px] font-semibold text-stone-500 uppercase tracking-widest hidden md:inline">
+              Open Access Journals
             </span>
           </div>
         </button>

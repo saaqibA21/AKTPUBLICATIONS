@@ -1,7 +1,7 @@
-// Mock data for AKT PUBLICATIONS
+// Mock data for AKT PUBLICATIONS - Clean, clear, jargon-free
 export const journalMeta = {
   name: "AKT PUBLICATIONS",
-  tagline: "International Journal of Advanced Scientific & Academic Research",
+  tagline: "International Peer-Reviewed Open Access Journal",
   eISSN: "2984-7125",
   pISSN: "2984-7117",
   frequency: "Quarterly (4 Issues / Year)",
@@ -23,32 +23,32 @@ export const journalMeta = {
 export const editorialQuotes = [
   {
     id: 1,
-    bgColor: "bg-akt-red text-white",
-    iconColor: "text-red-200",
-    quote: "Our mission is to dismantle barriers to scientific discovery while preserving uncompromising double-blind peer review standards.",
+    bgColor: "bg-white text-stone-900 border border-stone-200 shadow-sm",
+    iconColor: "text-[#C2410C]",
+    quote: "Our goal is simple: make high-quality research easy to submit, fairly reviewed, and free for anyone in the world to read.",
     author: "Prof. Dr. Arthur Vance",
     role: "Editor-in-Chief",
-    institution: "AKT Institute of Scientific Governance",
+    institution: "Max Planck Institute",
     image: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=400&q=80",
   },
   {
     id: 2,
-    bgColor: "bg-white text-akt-dark border border-stone-200",
-    iconColor: "text-akt-red",
-    quote: "A publication's true legacy is measured by the replicability of its papers and the ethical courage of its editorial board.",
+    bgColor: "bg-white text-stone-900 border border-stone-200 shadow-sm",
+    iconColor: "text-[#C2410C]",
+    quote: "Great research should be open and accessible. We judge every submission on clear evidence, strong methods, and real-world value.",
     author: "Dr. Elena Rostova",
-    role: "Chair of Editorial Advisory Board",
-    institution: "International Consortium for Open Science",
+    role: "Chair of Editorial Board",
+    institution: "ETH Zürich",
     image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=400&q=80",
   },
   {
     id: 3,
-    bgColor: "bg-akt-dark text-white",
-    iconColor: "text-stone-400",
-    quote: "We believe rapid dissemination must never compromise rigorous scrutiny. Our 49-day median decision rate reflects editorial efficiency, not haste.",
+    bgColor: "bg-white text-stone-900 border border-stone-200 shadow-sm",
+    iconColor: "text-[#C2410C]",
+    quote: "Authors deserve clear, helpful feedback without months of waiting. Fast review should always mean thorough, thoughtful review.",
     author: "Prof. Tariq Al-Mansoor",
-    role: "Senior Section Editor, AI & Bio-informatics",
-    institution: "Centre for Advanced Computational Biology",
+    role: "Senior Section Editor",
+    institution: "Imperial College London",
     image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=400&q=80",
   }
 ];
@@ -57,42 +57,42 @@ export const editorialBoardMembers = [
   {
     name: "Prof. Dr. Arthur Vance",
     role: "Editor-in-Chief",
-    field: "Molecular Genetics & Cellular Biology",
-    affil: "Max Planck Institute / AKT Research Chair",
+    field: "Biology & Health Sciences",
+    affil: "Max Planck Institute",
     country: "Germany",
   },
   {
     name: "Dr. Elena Rostova",
     role: "Chair, Editorial Advisory Board",
-    field: "Quantum Materials & Nanotechnology",
+    field: "Materials & Physics",
     affil: "ETH Zürich",
     country: "Switzerland",
   },
   {
     name: "Prof. Tariq Al-Mansoor",
     role: "Section Editor",
-    field: "Artificial Intelligence & Computational Models",
+    field: "Computer Science & AI",
     affil: "Imperial College London",
     country: "United Kingdom",
   },
   {
     name: "Dr. Maya Chen-Nakamura",
     role: "Associate Editor",
-    field: "Global Health Economics & Epidemiology",
+    field: "Public Health & Medicine",
     affil: "Kyoto University",
     country: "Japan",
   },
   {
     name: "Prof. Samuel O. Adeleke",
     role: "Advisory Board Member",
-    field: "Renewable Energy & Environmental Policy",
+    field: "Renewable Energy & Environment",
     affil: "University of Cape Town",
     country: "South Africa",
   },
   {
     name: "Dr. Sofia Rodriguez",
     role: "Section Editor",
-    field: "Data Privacy & Digital Ethics",
+    field: "Digital Policy & Ethics",
     affil: "University of Barcelona",
     country: "Spain",
   }
@@ -101,8 +101,8 @@ export const editorialBoardMembers = [
 export const currentArticles = [
   {
     id: "art-101",
-    title: "Optimized CRISPR-Cas9 Base Editing for Targeted Oncogenic Suppressor Restoration",
-    category: "Biotechnology & Medicine",
+    title: "New Approaches in Gene Editing for Precision Cancer Treatment",
+    category: "Medicine & Health",
     authors: "K. Rahman, L. Zhao, E. Vance, S. Al-Mansoor",
     doi: "10.5824/akt.2026.12.04.101",
     date: "24 Oct 2026",
@@ -112,12 +112,12 @@ export const currentArticles = [
     views: "18,420",
     downloads: "4,290",
     citations: "38",
-    abstract: "Targeted genetic restoration represents a cornerstone in precision oncology. In this work, we demonstrate a engineered high-fidelity Cas9 variant demonstrating 99.4% on-target editing efficiency in multi-lineage tumor suppressors with minimal off-target translocations.",
+    abstract: "This study evaluates new gene editing techniques that target specific cancer cells with higher accuracy, helping preserve healthy tissue and improve treatment outcomes.",
     pdfUrl: "#"
   },
   {
     id: "art-102",
-    title: "Autonomous Swarm Optimization in Multi-Agent Neural Architectures for Micro-Grid Balancing",
+    title: "Using Artificial Intelligence to Balance Renewable Energy Grids",
     category: "Computer Science & AI",
     authors: "A. Kowalski, P. Sharma, D. Miller",
     doi: "10.5824/akt.2026.12.04.102",
@@ -128,13 +128,13 @@ export const currentArticles = [
     views: "12,190",
     downloads: "2,840",
     citations: "19",
-    abstract: "Distributed renewable energy nodes require decentralized control algorithms. We introduce a bio-inspired multi-agent coordination protocol operating under stochastic intermittency with sub-second convergence.",
+    abstract: "A practical study on using machine learning algorithms to manage solar and wind energy fluctuations in modern local power systems.",
     pdfUrl: "#"
   },
   {
     id: "art-103",
-    title: "High-Entropy Perovskite Catalysts for Direct Seawater Electrolysis Under Ambient Temperatures",
-    category: "Materials Science & Chemistry",
+    title: "New Catalyst Materials for Clean Hydrogen Production",
+    category: "Materials & Chemistry",
     authors: "M. Tanaka, J. H. Park, H. Weber",
     doi: "10.5824/akt.2026.12.04.103",
     date: "14 Oct 2026",
@@ -144,13 +144,13 @@ export const currentArticles = [
     views: "9,640",
     downloads: "1,980",
     citations: "27",
-    abstract: "Corrosion-resistant anode materials are critical for scalable zero-carbon green hydrogen production. This paper synthesizes a five-element quinary perovskite oxide demonstrating over 3,000 hours of continuous seawater stability.",
+    abstract: "A study introducing durable new electrode materials that can produce clean hydrogen from seawater without rapid degradation.",
     pdfUrl: "#"
   },
   {
     id: "art-104",
-    title: "Algorithmic Transparency and Constitutional Rights in Automated Judicial Screening Systems",
-    category: "Law & Social Policy",
+    title: "Fairness and Transparency in Automated Legal Decisions",
+    category: "Law & Society",
     authors: "C. Sterling, N. O'Connor",
     doi: "10.5824/akt.2026.12.04.104",
     date: "08 Oct 2026",
@@ -160,7 +160,7 @@ export const currentArticles = [
     views: "14,530",
     downloads: "3,110",
     citations: "14",
-    abstract: "The integration of predictive machine learning within judicial preliminary assessment poses profound questions of due process, statistical fairness, and right to human explanation.",
+    abstract: "An analysis of how automated algorithms are used in court systems, exploring fairness, accountability, and the right to clear explanations.",
     pdfUrl: "#"
   }
 ];
@@ -168,38 +168,38 @@ export const currentArticles = [
 export const reviewStages = [
   {
     step: "01",
-    title: "Initial Editorial Screening",
+    title: "Initial Check",
     timeline: "Within 3 Days",
-    desc: "Rigorous desk review by Editor-in-Chief for scope adherence, novelty, and Turnitin/CrossCheck similarity audit (< 12%).",
-    badge: "Plagiarism & Scope Audit"
+    desc: "Editors review the paper to ensure it fits the journal, meets basic formatting standards, and is original work.",
+    badge: "Format & Originality Check"
   },
   {
     step: "02",
-    title: "Double-Blind Referee Assignment",
+    title: "Expert Peer Review",
     timeline: "Days 4 – 7",
-    desc: "Assignment of minimum two independent domain experts under strict conflict-of-interest declarations.",
-    badge: "Blind Peer Review"
+    desc: "The manuscript is shared with independent subject experts who review the research without seeing author names.",
+    badge: "Anonymous Peer Review"
   },
   {
     step: "03",
-    title: "First Editorial Decision",
-    timeline: "Median 49 Days",
-    desc: "Comprehensive evaluation synthesis: Accept, Minor Revision, Major Revision, or Reject with detailed referee commentary.",
-    badge: "Median: 49 Days"
+    title: "Feedback & Decision",
+    timeline: "Average 49 Days",
+    desc: "Authors receive detailed, constructive feedback and an editorial decision (Accept, Revise, or Decline).",
+    badge: "Average: 49 Days"
   },
   {
     step: "04",
-    title: "Revision & Final Acceptance",
-    timeline: "Median 158 Days",
-    desc: "Author rebuttals verified by original referees and Section Editor before formal letter of acceptance is issued.",
+    title: "Revisions & Final Approval",
+    timeline: "Average 158 Days",
+    desc: "Authors update their paper based on reviewer comments, and editors verify the final improved version.",
     badge: "Acceptance: 21.4%"
   },
   {
     step: "05",
-    title: "Production & Online Publication",
-    timeline: "Median 33 Days",
-    desc: "Typesetting, XML tagging, DOI assignment, CrossRef registration, and permanent indexing into open repositories.",
-    badge: "e-ISSN & DOI Live"
+    title: "Online Publication",
+    timeline: "Average 33 Days",
+    desc: "The accepted paper is typeset, given a permanent link (DOI), and published online for everyone to read for free.",
+    badge: "Free Online Access"
   }
 ];
 
@@ -208,28 +208,28 @@ export const membershipTiers = [
     type: "Annual Membership",
     period: "12 Months",
     fee: "$180 / Year",
-    highlight: "Ideal for active post-doctoral researchers and faculty.",
+    highlight: "Great for active researchers, university faculty, and postdocs.",
     benefits: [
-      "25% Article Processing Charge (APC) waiver on all accepted manuscripts",
-      "Priority fast-track preliminary editorial review",
-      "Free access to full AKT Archive of historical monographs",
-      "Annual Certificate of Academic Fellowship",
-      "Invitation to AKT Annual Global Research Symposium"
+      "25% discount on publishing charges for accepted papers",
+      "Priority customer support and submission status tracking",
+      "Full access to the AKT complete research library",
+      "Annual Certificate of Membership",
+      "Invitations to our annual academic events and webinars"
     ],
     popular: false
   },
   {
     type: "Life Membership",
-    period: "Lifetime Tenure",
+    period: "Lifetime",
     fee: "$950 One-time",
-    highlight: "Prestigious recognition for senior academics, professors, and department heads.",
+    highlight: "Long-term partnership for professors, department leaders, and senior scholars.",
     benefits: [
-      "50% APC waiver for lifetime submissions as corresponding author",
-      "Eligibility for Editorial Advisory Board nomination",
-      "Direct voting rights for AKT Best Paper & Science Awards",
-      "Exclusive hardbound commemorative Annual Proceedings",
-      "Institutional delegation pass to all AKT international summits",
-      "Personalized Academic Scholar Page on AKT portal"
+      "50% lifetime discount on publishing charges",
+      "Eligible for Editorial Board nomination",
+      "Voting rights for our Annual Best Paper Awards",
+      "Complimentary printed annual edition",
+      "VIP access to international conferences",
+      "Dedicated author profile page on the AKT website"
     ],
     popular: true
   }
@@ -237,21 +237,21 @@ export const membershipTiers = [
 
 export const awardsList = [
   {
-    title: "AKT Outstanding Paper of the Year Award",
-    prize: "$5,000 Research Grant & Commemorative Medallion",
-    criteria: "Awarded to the most groundbreaking empirical or theoretical contribution published in AKT within the preceding calendar year.",
-    deadline: "Nominations close 30 November annually."
+    title: "Best Paper of the Year",
+    prize: "$5,000 Research Grant & Award Certificate",
+    criteria: "Recognizes the most impactful and insightful research paper published in AKT during the past year.",
+    deadline: "Nominations close November 30 each year."
   },
   {
-    title: "Young Scientist & Early Career Laureate",
-    prize: "$3,000 Grant & Full Open Access Waiver for 3 Papers",
-    criteria: "Recognizing researchers under 36 years of age demonstrating exceptional originality and social impact in scientific inquiry.",
-    deadline: "Annual review by Editorial Advisory Board."
+    title: "Young Researcher Award",
+    prize: "$3,000 Grant & Free Publishing for 3 Papers",
+    criteria: "Celebrates early-career scientists and researchers who publish outstanding, innovative work.",
+    deadline: "Selected annually by our Editorial Board."
   },
   {
-    title: "Distinguished Referee Excellence Award",
-    prize: "Honorary Fellowship & Editorial Recognition Badge",
-    criteria: "Honoring reviewers who provide extraordinary thoroughness, constructive feedback, and punctual evaluations throughout the review cycle.",
-    deadline: "Conferred bi-annually."
+    title: "Reviewer Excellence Award",
+    prize: "Certificate of Appreciation & Free Annual Membership",
+    criteria: "Honors peer reviewers who consistently provide constructive, timely, and thorough feedback to authors.",
+    deadline: "Awarded twice a year."
   }
 ];

@@ -18,37 +18,37 @@ export default function ArchiveGrid({ onSelectArticle, onOpenSubmit }) {
     : currentArticles.filter(a => a.category === selectedCategory);
 
   return (
-    <section id="archive" className="bg-[#F5F2EB] py-12 sm:py-16 lg:py-24 px-4 sm:px-8 lg:px-12 w-full border-b border-neutral-300">
+    <section id="archive" className="bg-white py-12 sm:py-16 lg:py-24 px-4 sm:px-8 lg:px-12 w-full border-b border-stone-200">
       <div className="max-w-[1600px] w-full mx-auto">
         
         {/* Section Header */}
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-8 sm:mb-10 gap-3 sm:gap-4">
           <div>
-            <div className="text-[11px] sm:text-xs font-mono font-bold tracking-widest text-black uppercase mb-1">
+            <div className="text-[11px] sm:text-xs font-mono font-bold tracking-widest text-[#C2410C] uppercase mb-1">
               VOLUME 12 • ISSUE 4 (CURRENT ISSUE)
             </div>
             <h2 className="font-display text-3xl sm:text-4xl lg:text-5xl text-stone-900 font-bold tracking-tight leading-[1.08]">
-              Latest Publications in <span className="text-[#C2410C]">AKT Archives</span>
+              Recent Publications in <span className="text-[#C2410C]">AKT Archives</span>
             </h2>
           </div>
 
-          <div className="text-xs sm:text-sm text-neutral-600 max-w-lg font-medium">
-            A collection of peer-reviewed empirical papers, comprehensive reviews, and fast-track research communications published under open access.
+          <div className="text-xs sm:text-sm text-stone-600 max-w-lg font-medium">
+            Browse newly published research papers across all disciplines. Completely free and open access for everyone to read and download.
           </div>
         </div>
 
         {/* Category Filter Pills */}
         <div className="flex items-center gap-2 overflow-x-auto pb-4 mb-8 scrollbar-none">
-          <Filter className="w-3.5 h-3.5 text-neutral-500 shrink-0 ml-1" />
-          <span className="text-xs font-bold text-neutral-600 uppercase tracking-wider mr-2 shrink-0">Filter:</span>
+          <Filter className="w-3.5 h-3.5 text-stone-400 shrink-0 ml-1" />
+          <span className="text-xs font-bold text-stone-600 uppercase tracking-wider mr-2 shrink-0">Filter:</span>
           {categories.map((cat) => (
             <button
               key={cat}
               onClick={() => setSelectedCategory(cat)}
               className={`px-4 py-2 rounded-full text-xs font-bold whitespace-nowrap transition-all ${
                 selectedCategory === cat
-                  ? 'bg-black text-white shadow'
-                  : 'bg-white text-neutral-800 hover:bg-neutral-200 border border-neutral-300'
+                  ? 'bg-[#C2410C] text-white shadow-sm'
+                  : 'bg-stone-50 text-stone-800 hover:bg-stone-100 border border-stone-200'
               }`}
             >
               {cat}
@@ -69,20 +69,20 @@ export default function ArchiveGrid({ onSelectArticle, onOpenSubmit }) {
             return (
               <div
                 key={art.id}
-                className="bg-white rounded-3xl overflow-hidden border border-neutral-200 shadow-sm hover:shadow-2xl hover:border-black transition-all duration-300 flex flex-col justify-between group"
+                className="bg-white rounded-3xl overflow-hidden border border-stone-200 shadow-sm hover:shadow-xl hover:border-[#C2410C] transition-all duration-300 flex flex-col justify-between group"
               >
                 <div>
                   {/* Photo Thumbnail */}
-                  <div className="relative aspect-[16/10] overflow-hidden bg-black">
+                  <div className="relative aspect-[16/10] overflow-hidden bg-stone-100">
                     <img
                       src={images[idx % images.length]}
                       alt={art.title}
                       className="w-full h-full object-cover grayscale contrast-125 group-hover:scale-105 transition-transform duration-500"
                     />
-                    <div className="absolute top-3 left-3 bg-black/85 backdrop-blur-sm text-white px-3 py-1 rounded-full text-[10px] font-mono font-bold tracking-wider uppercase">
+                    <div className="absolute top-3 left-3 bg-stone-900/85 backdrop-blur-sm text-white px-3 py-1 rounded-full text-[10px] font-mono font-bold tracking-wider uppercase">
                       {art.category}
                     </div>
-                    <div className="absolute top-3 right-3 bg-white text-black px-2.5 py-0.5 rounded-full text-[9px] font-black uppercase tracking-wider shadow">
+                    <div className="absolute top-3 right-3 bg-[#C2410C] text-white px-2.5 py-0.5 rounded-full text-[9px] font-black uppercase tracking-wider shadow">
                       Open Access
                     </div>
                   </div>
@@ -90,40 +90,40 @@ export default function ArchiveGrid({ onSelectArticle, onOpenSubmit }) {
                   {/* Content Strip */}
                   <div className="p-6">
                     {/* Date and Citation Metrics */}
-                    <div className="flex items-center justify-between text-[11px] text-neutral-500 font-mono mb-2.5">
+                    <div className="flex items-center justify-between text-[11px] text-stone-500 font-mono mb-2.5">
                       <span>{art.date}</span>
-                      <span className="font-semibold text-neutral-700">Pages: {art.pages}</span>
+                      <span className="font-semibold text-stone-700">Pages: {art.pages}</span>
                     </div>
 
                     {/* Headline */}
                     <h3 
                       onClick={() => onSelectArticle(art)}
-                      className="font-bold text-base sm:text-lg text-neutral-950 leading-snug group-hover:opacity-75 transition-opacity cursor-pointer line-clamp-2 mb-2"
+                      className="font-bold text-base sm:text-lg text-stone-900 leading-snug group-hover:text-[#C2410C] transition-colors cursor-pointer line-clamp-2 mb-2"
                     >
                       {art.title}
                     </h3>
 
                     {/* Authors */}
-                    <p className="text-xs text-neutral-600 font-medium mb-3">
+                    <p className="text-xs text-stone-600 font-medium mb-3">
                       By {art.authors}
                     </p>
 
                     {/* Abstract teaser */}
-                    <p className="text-xs text-neutral-500 line-clamp-2 leading-relaxed">
+                    <p className="text-xs text-stone-500 line-clamp-2 leading-relaxed">
                       {art.abstract}
                     </p>
                   </div>
                 </div>
 
                 {/* Footer Bar */}
-                <div className="px-6 py-4 bg-neutral-50 border-t border-neutral-100 flex items-center justify-between text-xs">
-                  <span className="font-mono text-[10px] text-neutral-500 truncate max-w-[160px]">
+                <div className="px-6 py-4 bg-stone-50 border-t border-stone-100 flex items-center justify-between text-xs">
+                  <span className="font-mono text-[10px] text-stone-500 truncate max-w-[160px]">
                     DOI: {art.doi}
                   </span>
                   <div className="flex items-center gap-2">
                     <button
                       onClick={() => onSelectArticle(art)}
-                      className="text-black hover:underline font-bold text-xs flex items-center gap-1"
+                      className="text-[#C2410C] hover:underline font-bold text-xs flex items-center gap-1"
                     >
                       <span>Read Full</span>
                       <ArrowRight className="w-3.5 h-3.5" />
@@ -140,9 +140,9 @@ export default function ArchiveGrid({ onSelectArticle, onOpenSubmit }) {
         <div className="mt-14 text-center">
           <button
             onClick={() => alert("Loading Volume 11, 10, 09... Full archive index of 1,480 peer-reviewed papers!")}
-            className="bg-black hover:bg-neutral-800 text-white px-9 py-4 rounded-full font-bold text-xs uppercase tracking-widest transition-all shadow-xl inline-flex items-center gap-2"
+            className="bg-stone-900 hover:bg-[#C2410C] text-white px-9 py-4 rounded-full font-bold text-xs uppercase tracking-widest transition-all shadow-md hover:shadow-lg inline-flex items-center gap-2"
           >
-            <span>View More Archives & Past Issues</span>
+            <span>View More Issues & Archives</span>
             <ArrowRight className="w-4 h-4 text-white" />
           </button>
         </div>

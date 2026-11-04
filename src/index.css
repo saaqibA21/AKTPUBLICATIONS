@@ -9,8 +9,8 @@
   }
 
   body {
-    background-color: #F5F2EB;
-    color: #121212;
+    background-color: #FFFFFF;
+    color: #18181B;
     overflow-x: hidden;
     width: 100%;
   }
@@ -23,16 +23,16 @@
 }
 
 ::-webkit-scrollbar-track {
-  background: #ECE8DE;
+  background: #F5F5F4;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #A3A3A3;
+  background: #D6D3D1;
   border-radius: 4px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #171717;
+  background: #78716C;
 }
 
 /* Perforated stamp style */

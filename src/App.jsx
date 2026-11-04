@@ -61,7 +61,7 @@ export default function App() {
   };
 
   return (
-    <div className="min-h-screen bg-[#F5F2EB] text-[#121212] flex flex-col font-sans selection:bg-black selection:text-white w-full">
+    <div className="min-h-screen bg-white text-stone-900 flex flex-col font-sans selection:bg-[#C2410C] selection:text-white w-full">
       
       {/* 1. Top Header with e-ISSN, Institutional Access, Login, Register (Full Width) */}
       <TopHeader 

@@ -34,13 +34,13 @@ export function SubmitModal({ isOpen, onClose }) {
       <div className="bg-white rounded-3xl max-w-2xl w-full max-h-[90vh] overflow-y-auto shadow-2xl border border-neutral-200">
         
         {/* Header */}
-        <div className="bg-black text-white p-6 rounded-t-3xl flex items-center justify-between sticky top-0 z-10">
+        <div className="bg-stone-900 text-white p-6 rounded-t-3xl flex items-center justify-between sticky top-0 z-10">
           <div>
-            <div className="text-[10px] font-mono font-bold tracking-widest uppercase text-neutral-400">
-              FAST-TRACK EDITORIAL PORTAL
+            <div className="text-[10px] font-mono font-bold tracking-widest uppercase text-[#C2410C]">
+              MANUSCRIPT SUBMISSION
             </div>
             <h3 className="font-display uppercase text-2xl font-bold tracking-wide">
-              Submit Manuscript to AKT Publications
+              Submit Your Manuscript
             </h3>
           </div>
           <button 
@@ -53,23 +53,23 @@ export function SubmitModal({ isOpen, onClose }) {
 
         {submitted ? (
           <div className="p-8 text-center">
-            <div className="w-16 h-16 bg-neutral-100 text-black rounded-full flex items-center justify-center mx-auto mb-4 border-2 border-black">
+            <div className="w-16 h-16 bg-orange-50 text-[#C2410C] rounded-full flex items-center justify-center mx-auto mb-4 border-2 border-[#C2410C]">
               <CheckCircle className="w-8 h-8" />
             </div>
-            <div className="bg-neutral-100 text-black px-3 py-1 rounded-full text-xs font-mono font-bold inline-block mb-3 border border-neutral-300">
-              MANUSCRIPT REF: AKT-2026-MS-8891
+            <div className="bg-stone-100 text-stone-900 px-3 py-1 rounded-full text-xs font-mono font-bold inline-block mb-3 border border-stone-300">
+              SUBMISSION REF: AKT-2026-MS-8891
             </div>
-            <h4 className="font-display uppercase text-3xl font-black text-neutral-900 mb-2">
+            <h4 className="font-display uppercase text-3xl font-black text-stone-900 mb-2">
               Submission Received Successfully
             </h4>
-            <p className="text-xs sm:text-sm text-neutral-600 max-w-md mx-auto mb-6 leading-relaxed">
-              Your manuscript has entered the automated triage queue. Initial desk screening and similarity audit will be completed within <strong>3 working days</strong>. A confirmation email with live tracking credentials has been dispatched.
+            <p className="text-xs sm:text-sm text-stone-600 max-w-md mx-auto mb-6 leading-relaxed">
+              Your submission has been received. Our editorial team will complete an initial review within <strong>3 working days</strong>. We have sent a confirmation email with your submission tracking reference.
             </p>
             <button
               onClick={() => { setSubmitted(false); setStep(1); onClose(); }}
-              className="bg-black hover:bg-neutral-800 text-white px-8 py-3 rounded-full text-xs font-bold uppercase tracking-wider transition-all"
+              className="bg-[#C2410C] hover:bg-[#9A3412] text-white px-8 py-3 rounded-full text-xs font-bold uppercase tracking-wider transition-all"
             >
-              Return to Portal
+              Close Window
             </button>
           </div>
         ) : (
@@ -269,9 +269,9 @@ export function SubmitModal({ isOpen, onClose }) {
                   <button
                     type="submit"
                     disabled={!formData.ethicsAgreed}
-                    className="bg-black hover:bg-neutral-800 disabled:opacity-50 text-white px-8 py-3 rounded-full text-xs font-bold uppercase tracking-wider transition-all shadow-lg"
+                    className="bg-[#C2410C] hover:bg-[#9A3412] disabled:opacity-50 text-white px-8 py-3 rounded-full text-xs font-bold uppercase tracking-wider transition-all shadow-lg"
                   >
-                    Submit Manuscript Final
+                    Submit Manuscript
                   </button>
                 </div>
               </div>
@@ -305,13 +305,13 @@ export function AuthModal({ isOpen, onClose, initialMode = 'login', initialType 
       <div className="bg-white rounded-3xl max-w-md w-full shadow-2xl border border-neutral-200 overflow-hidden">
         
         {/* Header */}
-        <div className="bg-black text-white p-6 flex items-center justify-between">
+        <div className="bg-stone-900 text-white p-6 flex items-center justify-between">
           <div className="flex items-center gap-2">
-            <div className="bg-white text-black px-2.5 py-1 rounded text-xs font-black tracking-widest font-display">
+            <div className="bg-[#C2410C] text-white px-2.5 py-1 rounded text-xs font-black tracking-widest font-display">
               AKT
             </div>
             <h3 className="font-display uppercase text-xl font-bold">
-              {mode === 'login' ? 'Editorial Portal Login' : 'Create Academic Account'}
+              {mode === 'login' ? 'Author & Reviewer Login' : 'Create Account'}
             </h3>
           </div>
           <button onClick={onClose} className="text-neutral-400 hover:text-white">
@@ -400,9 +400,9 @@ export function AuthModal({ isOpen, onClose, initialMode = 'login', initialType 
 
               <button
                 type="submit"
-                className="w-full bg-black hover:bg-neutral-800 text-white py-3 rounded-full text-xs font-bold uppercase tracking-wider shadow-md transition-all"
+                className="w-full bg-[#C2410C] hover:bg-[#9A3412] text-white py-3 rounded-full text-xs font-bold uppercase tracking-wider shadow-md transition-all"
               >
-                {mode === 'login' ? 'Sign In to Portal' : 'Register Academic Account'}
+                {mode === 'login' ? 'Sign In to Portal' : 'Register Account'}
               </button>
 
               <div className="text-center pt-2">
@@ -436,13 +436,13 @@ export function GuidelinesModal({ isOpen, onClose, initialTab = 'guidelines' }) 
       <div className="bg-white rounded-3xl max-w-3xl w-full max-h-[85vh] overflow-y-auto shadow-2xl border border-neutral-200">
         
         {/* Header */}
-        <div className="bg-black text-white p-6 sticky top-0 z-10 flex items-center justify-between">
+        <div className="bg-stone-900 text-white p-6 sticky top-0 z-10 flex items-center justify-between">
           <div>
-            <div className="text-[10px] font-mono font-bold tracking-widest uppercase text-neutral-400">
-              EDITORIAL STANDARDS & TEMPLATES
+            <div className="text-[10px] font-mono font-bold tracking-widest uppercase text-[#C2410C]">
+              AUTHOR RESOURCES
             </div>
             <h3 className="font-display uppercase text-2xl font-bold">
-              Author Guidelines & Ethical Protocols
+              Author Guidelines & Policies
             </h3>
           </div>
           <button onClick={onClose} className="text-neutral-400 hover:text-white">
@@ -553,13 +553,13 @@ export function EditorialModal({ isOpen, onClose }) {
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/75 backdrop-blur-sm animate-in fade-in">
       <div className="bg-white rounded-3xl max-w-3xl w-full max-h-[85vh] overflow-y-auto shadow-2xl border border-neutral-200">
-        <div className="bg-black text-white p-6 sticky top-0 z-10 flex items-center justify-between">
+        <div className="bg-stone-900 text-white p-6 sticky top-0 z-10 flex items-center justify-between">
           <div>
-            <div className="text-[10px] font-mono font-bold tracking-widest uppercase text-neutral-400">
-              GOVERNANCE DIRECTORY
+            <div className="text-[10px] font-mono font-bold tracking-widest uppercase text-[#C2410C]">
+              EDITORIAL DIRECTORY
             </div>
             <h3 className="font-display uppercase text-2xl font-bold">
-              AKT International Editorial Advisory Board
+              AKT International Editorial Board
             </h3>
           </div>
           <button onClick={onClose} className="text-neutral-400 hover:text-white">
@@ -597,10 +597,10 @@ export function ContactModal({ isOpen, onClose }) {
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/75 backdrop-blur-sm animate-in fade-in">
       <div className="bg-white rounded-3xl max-w-lg w-full shadow-2xl border border-neutral-200 overflow-hidden">
-        <div className="bg-black text-white p-6 flex items-center justify-between">
+        <div className="bg-stone-900 text-white p-6 flex items-center justify-between">
           <div>
-            <div className="text-[10px] font-mono font-bold tracking-widest uppercase text-neutral-400">
-              EDITORIAL HEADQUARTERS
+            <div className="text-[10px] font-mono font-bold tracking-widest uppercase text-[#C2410C]">
+              EDITORIAL OFFICE
             </div>
             <h3 className="font-display uppercase text-2xl font-bold">
               Contact AKT Publications
@@ -640,8 +640,8 @@ export function ContactModal({ isOpen, onClose }) {
           </div>
 
           <button
-            onClick={() => { alert("Inquiry dispatched to Editorial Secretariat. Ticket #AKT-REQ-4029 opened."); onClose(); }}
-            className="w-full bg-black hover:bg-neutral-800 text-white py-3 rounded-full text-xs font-bold uppercase tracking-wider shadow-md transition-all"
+            onClick={() => { alert("Inquiry sent to our editorial office. A representative will reply to your email shortly."); onClose(); }}
+            className="w-full bg-[#C2410C] hover:bg-[#9A3412] text-white py-3 rounded-full text-xs font-bold uppercase tracking-wider shadow-md transition-all"
           >
             Send Inquiry to Editors
           </button>
@@ -658,8 +658,8 @@ export function ArticleModal({ article, onClose, onOpenSubmit }) {
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/75 backdrop-blur-sm animate-in fade-in">
       <div className="bg-white rounded-3xl max-w-2xl w-full max-h-[85vh] overflow-y-auto shadow-2xl border border-neutral-200">
-        <div className="bg-black text-white p-6 sticky top-0 z-10 flex items-center justify-between">
-          <span className="bg-white text-black text-[10px] font-black uppercase tracking-widest px-3 py-1 rounded-full">
+        <div className="bg-stone-900 text-white p-6 sticky top-0 z-10 flex items-center justify-between">
+          <span className="bg-[#C2410C] text-white text-[10px] font-black uppercase tracking-widest px-3 py-1 rounded-full">
             {article.category}
           </span>
           <button onClick={onClose} className="text-neutral-400 hover:text-white">
@@ -707,7 +707,7 @@ export function ArticleModal({ article, onClose, onOpenSubmit }) {
           <div className="flex items-center justify-between pt-4 border-t border-neutral-200">
             <button
               onClick={() => alert(`Downloading verified PDF for DOI: ${article.doi}`)}
-              className="bg-black hover:bg-neutral-800 text-white px-6 py-2.5 rounded-full text-xs font-bold uppercase tracking-wider flex items-center gap-2 shadow"
+              className="bg-[#C2410C] hover:bg-[#9A3412] text-white px-6 py-2.5 rounded-full text-xs font-bold uppercase tracking-wider flex items-center gap-2 shadow"
             >
               <Download className="w-4 h-4" />
               <span>Download Full PDF (Open Access)</span>
