@@ -1,37 +1,9 @@
-import React, { useState } from 'react';
-import { ArrowRight, Share2, CheckCircle2, ShieldCheck, Award, Type } from 'lucide-react';
+import React from 'react';
+import { ArrowRight, Share2, CheckCircle2, ShieldCheck, Award } from 'lucide-react';
 
 export default function HeroSection({ onOpenSubmit, onOpenGuidelines, onOpenReview }) {
-  // Live font switcher state (defaults to prestigious Playfair Display serif)
-  const [activeFont, setActiveFont] = useState('playfair');
-
-  const fontConfig = {
-    playfair: {
-      label: 'Editorial Serif',
-      className: 'font-playfair tracking-tight font-black leading-[1.02]',
-      titleClass: 'text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl',
-    },
-    sans: {
-      label: 'Modern Sans',
-      className: 'font-heading tracking-tight font-extrabold leading-[1.0]',
-      titleClass: 'text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl',
-    },
-    cinzel: {
-      label: 'Classical Roman',
-      className: 'font-cinzel tracking-wider font-bold leading-[1.08] uppercase',
-      titleClass: 'text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl',
-    },
-    cormorant: {
-      label: 'Literary Garamond',
-      className: 'font-cormorant font-bold italic tracking-tight leading-[1.02]',
-      titleClass: 'text-4xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-8xl',
-    },
-  };
-
-  const currentFont = fontConfig[activeFont] || fontConfig.playfair;
-
   return (
-    <section className="relative bg-[#F5F2EB] text-stone-900 overflow-hidden pt-6 sm:pt-10 pb-14 sm:pb-20 lg:pb-24 px-4 sm:px-8 lg:px-12 w-full border-b border-stone-300">
+    <section className="relative bg-[#F5F2EB] text-stone-900 overflow-hidden pt-8 sm:pt-12 pb-14 sm:pb-20 lg:pb-24 px-4 sm:px-8 lg:px-12 w-full border-b border-stone-300">
       {/* Subtle halftone/grain effect overlay for tactile paper look */}
       <div 
         className="absolute inset-0 opacity-[0.035] pointer-events-none"
@@ -49,29 +21,8 @@ export default function HeroSection({ onOpenSubmit, onOpenGuidelines, onOpenRevi
           {/* Left Column (7 cols): Editorial Typography */}
           <div className="lg:col-span-7 flex flex-col justify-center">
 
-            {/* Quick Live Font Selector Pill */}
-            <div className="inline-flex items-center gap-1.5 p-1 bg-white/80 backdrop-blur-sm border border-stone-300 rounded-full mb-5 w-fit shadow-xs">
-              <span className="text-[10px] font-mono font-bold uppercase text-stone-500 pl-2 pr-1 flex items-center gap-1">
-                <Type className="w-3 h-3 text-[#C2410C]" />
-                <span className="hidden sm:inline">Typeface:</span>
-              </span>
-              {Object.entries(fontConfig).map(([key, item]) => (
-                <button
-                  key={key}
-                  onClick={() => setActiveFont(key)}
-                  className={`px-2.5 py-1 rounded-full text-[11px] font-semibold transition-all ${
-                    activeFont === key
-                      ? 'bg-stone-900 text-white shadow-xs'
-                      : 'text-stone-600 hover:text-stone-950 hover:bg-stone-100'
-                  }`}
-                >
-                  {item.label}
-                </button>
-              ))}
-            </div>
-
-            {/* Display Headline in BURNT ORANGE and DEEP CHARCOAL */}
-            <h1 className={`${currentFont.className} ${currentFont.titleClass} mb-4 sm:mb-6 break-words transition-all duration-200`}>
+            {/* Display Headline in PLAYFAIR DISPLAY Editorial Serif */}
+            <h1 className="font-playfair font-black tracking-tight leading-[1.04] text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl mb-4 sm:mb-6 break-words">
               <span className="text-[#C2410C]">AKT Publications,</span> <br />
               <span className="text-stone-900">A Legacy of Rigorous</span> <br />
               <span className="text-[#C2410C]">Scholarship.</span>
